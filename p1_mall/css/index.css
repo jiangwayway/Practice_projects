@@ -5,9 +5,12 @@
 #wrapper #header .headTop .headTopMain {
   width: 1200px;
   margin: 0 auto;
-}
-#wrapper #header .headTop .headTopMain .left {
   line-height: 30px;
+}
+#wrapper #header .headTop .headTopMain .left::after {
+  clear: both;
+  display: block;
+  content: "";
 }
 #wrapper #header .headTop .headTopMain .left h5 {
   margin-right: 5px;

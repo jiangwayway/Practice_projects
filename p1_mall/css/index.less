@@ -1,3 +1,5 @@
+@import './mixins/clear.less';
+
 #wrapper {
   #header {
     .headTop {
@@ -7,9 +9,11 @@
       .headTopMain {
         width: 1200px;
         margin: 0 auto;
+        line-height: 30px;
+        // overflow: hidden;
 
         .left {
-          line-height: 30px;
+          .clearfix();
 
           h5 {
             margin-right: 5px;
