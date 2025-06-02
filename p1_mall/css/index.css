@@ -1,0 +1,23 @@
+#wrapper #header .headTop {
+  background: #eaeaea;
+  height: 30px;
+}
+#wrapper #header .headTop .headTopMain {
+  width: 1200px;
+  margin: 0 auto;
+}
+#wrapper #header .headTop .headTopMain .left {
+  line-height: 30px;
+}
+#wrapper #header .headTop .headTopMain .left h5 {
+  margin-right: 5px;
+  float: left;
+}
+#wrapper #header .headTop .headTopMain .left p {
+  float: left;
+}
+#wrapper #header .headTop .headTopMain .left p a:first-child {
+  padding-right: 3px;
+  border-right: 1px solid #ccc;
+  margin-right: 3px;
+}
