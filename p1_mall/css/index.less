@@ -11,9 +11,11 @@
         margin: 0 auto;
         line-height: 30px;
         // overflow: hidden;
+        .clearfix(); //清除浮动
 
         .left {
-          .clearfix();
+          float: left;
+          .clearfix(); //清除浮动
 
           h5 {
             margin-right: 5px;
@@ -33,7 +35,95 @@
           }
 
         }
+
+        .right {
+          float: right;
+
+          nav {
+            //解决行内块元素间距问题：父元素设置字体大小为0
+            //行内块元素设置字体大小为正常值
+            font-size: 0;
+            // vertical-align: top;
+
+            // border: 1px solid #ea4a36;
+            // span {
+            //   vertical-align: top;
+            //   // font-size: 0;
+            //   display: inline-block;
+            //   width: 5px;
+            //   // height: 5px;
+            //   background-color: #ea4a36;
+            // }
+
+            a {
+              margin-right: 10px;
+              padding-right: 10px;
+              font-size: 12px;
+              border-right: 1px solid #b3aeae;
+
+              &:last-child {
+                border: none;
+                margin-right: 0px;
+                padding-right: 0px;
+              }
+            }
+          }
+        }
       }
+    }
+
+    .headBottom {
+      // .clearfix();
+
+      .headBottomMain {
+        width: 1200px;
+        margin: 0 auto;
+        .clearfix();
+
+        .logo {
+          float: left;
+
+          a {
+            img {
+              width: 175px;
+              height: 56px;
+              margin: 25px 45px;
+            }
+          }
+
+        }
+
+        .search {
+          float: right;
+          margin-top: 35px;
+
+          input {
+            &:first-child {
+              box-sizing: border-box;
+              width: 490px;
+              height: 32px;
+              padding: 0 4px;
+              border: 3px solid #ea4a36;
+              float: left;
+            }
+
+            &:last-child {
+              width: 68px;
+              height: 32px;
+              color: #fff;
+              background: #ea4a36;
+              border: none;
+            }
+
+            &::-webkit-input-placeholder {
+              color: yellowgreen;
+            }
+          }
+
+
+        }
+      }
+
     }
   }
 }
